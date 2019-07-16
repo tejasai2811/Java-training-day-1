@@ -1,0 +1,15 @@
+pblic interface Connection{
+
+public String getConnectionInfo();
+}
+
+class Demo {
+Connection con = new Connection() {
+public String getConnectionInfo () {
+
+return "Oracle Connection";
+}
+};
+}
+
+Connection con = ()->{return "Oracle Connection"};
